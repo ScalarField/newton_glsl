@@ -26,5 +26,6 @@
     "raw-loader": "^4.0.2",
     "webpack": "^5.26.3",
     "webpack-cli": "^4.5.0"
-  }
+  },
+  "sideEffects": ["*.glsl"]
 }

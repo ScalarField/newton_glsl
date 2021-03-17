@@ -6,6 +6,7 @@
 varying vec2 texcoord;
 
 uniform float aspect;
+uniform float xmax;
 uniform vec3[MAX_ROOTS] poly;
 uniform float[MAX_ROOTS] brightness;
 uniform int roots;
@@ -64,7 +65,6 @@ vec4 newtoncolor(vec2 n){
 
 void main(){
 
-	float xmax = 2.0;
 	vec2 z = texcoord - 0.5;
 	z.x *= 2.0*xmax;
 	z.y *= 2.0*xmax*aspect;

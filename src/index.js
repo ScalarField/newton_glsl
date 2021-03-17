@@ -46,6 +46,10 @@ const mat = new THREE.ShaderMaterial({
 			type: "float",
 			value: canvas.height/canvas.width
 		},
+		xmax: {
+			type: "float",
+			value: maxX
+		},
 		poly: {
 			type: "vec3",
 			value: poly
