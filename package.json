@@ -2,9 +2,10 @@
   "name": "newton_glsl",
   "version": "1.0.0",
   "description": "Animated Newton fractals with GLSL and three.js",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -12,10 +13,18 @@
   },
   "keywords": [
     "fractal",
-	"shader",
-	"javascript",
-	"glsl"
+    "shader",
+    "javascript",
+    "glsl"
   ],
   "author": "ScalarField",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.126.1"
+  },
+  "devDependencies": {
+    "raw-loader": "^4.0.2",
+    "webpack": "^5.26.3",
+    "webpack-cli": "^4.5.0"
+  }
 }

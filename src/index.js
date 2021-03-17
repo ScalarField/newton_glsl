@@ -1,6 +1,7 @@
 import * as THREE from "three";
-import vertexShader from "shaders/vertex.glsl";
-import fragmentShader from "shaders/fragment.glsl";
+
+import vertexShader from "../shaders/vertex.glsl";
+import fragmentShader from "../shaders/fragment.glsl";
 
 const rand = (min, max)=>min+Math.random()*(max-min);
 
